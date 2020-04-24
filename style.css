@@ -12,6 +12,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh ;
+    background-color: rgb(88, 46, 27)
 }
 .container{
     position: relative;
@@ -30,6 +31,9 @@ body{
     margin: 60px 0;
     background: #000;
 }
+.container .box:hover{
+    box-shadow: 0 30px 20px rgba(248, 248, 248, 0.2);
+}
 .container .box .imageBox{
     position: absolute;
     top: 0;
@@ -42,11 +46,12 @@ body{
     top: 60%;
     left: 50px;
     right:50px;
-    background: #fff;;
+    background: rgb(219, 213, 213);
     transform: translateZ(20px) scaleY(0);
     padding: 40px 25px;
     transform-origin: top;
     transition: 0.5s;
+    transform-style: preserve-3d;
 }
 .container .box:hover .contentBox{
     transform: translateZ(20px) scaleY(1);
